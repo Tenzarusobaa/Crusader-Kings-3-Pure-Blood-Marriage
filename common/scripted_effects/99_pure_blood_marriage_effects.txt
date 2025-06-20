@@ -1,0 +1,19 @@
+pure_blood_marriage_penalty = {
+    if = {
+        limit = {
+            has_trait = pure_blood
+            betrothed = yes
+            betrothed = { NOT = { has_trait = pure_blood } }
+        }
+        add_prestige = -1000
+        add_trait = tainted_blood
+    }
+    if = {
+        limit = {
+            has_trait = pure_blood
+            spouse = { NOT = { has_trait = pure_blood } }
+        }
+        add_prestige = -1000
+        add_trait = tainted_blood
+    }
+}

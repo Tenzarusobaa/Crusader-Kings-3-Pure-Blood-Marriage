@@ -1,0 +1,17 @@
+pure_blood = {
+    is_good = yes
+    genetic = yes
+    inheritable = yes
+    icon = "trait_genetic"
+    desc = trait_pure_blood_desc
+    cost = 5
+}
+
+tainted_blood = {
+    is_bad = yes
+    genetic = no
+    inheritable = no
+    icon = "trait_ill"
+    desc = trait_tainted_blood_desc
+    cost = -5
+}

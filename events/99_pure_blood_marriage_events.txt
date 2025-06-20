@@ -1,0 +1,16 @@
+namespace = pure_blood
+
+character_event = {
+    id = pure_blood.001
+    hide_window = yes
+    trigger = {
+        is_married = yes
+        has_trait = pure_blood
+        spouse = {
+            NOT = { has_trait = pure_blood }
+        }
+    }
+    immediate = {
+        apply_effect = pure_blood_marriage_penalty
+    }
+}
