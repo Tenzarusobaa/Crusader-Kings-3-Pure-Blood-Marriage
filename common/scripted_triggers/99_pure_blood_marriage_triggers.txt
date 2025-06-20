@@ -1,0 +1,9 @@
+can_marry_pure_blood = {
+    OR = {
+        NOT = { has_trait = pure_blood }
+        AND = {
+            has_trait = pure_blood
+            scope:other = { has_trait = pure_blood }
+        }
+    }
+}
